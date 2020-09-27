@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<title>Example Title</title>
+	<meta name="author" content="Your Name">
+	<meta name="description" content="Example description">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" type="image/x-icon" href=""/>
+</head>
+
+<body>
+    <div class="main">
+        <div class="input">
+            <input type="text" id="input" class="from-input" value="0" readonly>
+        </div>
+        <div class="col">
+            <div class="button">
+                <input type="button" onclick="allclr()" id="allcleam" value="AC" style="color: #1975C5" >
+            </div>
+            <div class="button">
+                <input type="button" onclick="oneclr()" id="clear" value="C" style="color: #1975C5">
+            </div>
+            <div class="button">
+                <input type="button" onclick="if(document.getElementById('input').value ==0){dis('0')}else{dis('%')}" id="persen" value="%" style="color: #1975C5">
+            </div>
+            <div class="button">
+                <input type="button" onclick="if(document.getElementById('input').value ==0){dis('0')}else{dis('/')}" id="muduls" value="/" style="color: #1975C5">
+            </div>
+           
+        </div>
+        <div class="col">
+            <div class="button">
+                <input type="button" onclick="dis('7')" id="seven" value="7">
+            </div>
+            <div class="button">
+                <input type="button" onclick="dis('8')"  id="eight" value="8">
+            </div>
+            <div class="button">
+                <input type="button" onclick="dis('9')"  id="nine" value="9">
+            </div>
+            <div class="button">
+                <input type="button" onclick="if(document.getElementById('input').value ==0){dis('0')}else{dis('*')}" id="multipul" style="color: #1975C5" value="X">
+            </div>
+            
+        </div>
+        <div class="col">
+            <div class="button">
+                <input type="button" onclick="dis('4')" id="four" value="4">
+            </div>
+            <div class="button">
+                <input type="button" onclick="dis('5')" id="five" value="5">
+            </div>
+            <div class="button">
+                <input type="button" onclick="dis('6')" id="six" value="6">
+            </div>
+            <div class="button">
+                <input type="button" onclick="if(document.getElementById('input').value ==0){dis('0')}else{dis('-')}" id="subtract" style="color: #1975C5" value="-">
+            </div>
+        </div>
+        <div class="col">
+            <div class="button">
+                <input type="button" onclick="dis('1')" id="one" value="1">
+            </div>
+            <div class="button">
+                <input type="button" onclick="dis('2')" id="two" value="2">
+            </div>
+            <div class="button">
+                <input type="button" onclick="dis('3')" id="three" value="3">
+            </div>
+            <div class="button">
+                <input type="button" onclick="if(document.getElementById('input').value ==0){dis('0')}else{dis('+')}" id="plus" value="+" style="color: #1975c5">
+            </div>
+        </div>
+        <div class="col">
+            <div class="button">
+               <input type="button" onclick="dis('E')" id="e" value="E"> 
+            </div>
+            <div class="button">
+                <input type="button" onclick="dis('0')" id="zro" value="0">
+            </div>
+            <div class="button">               
+                <input type="button" onclick="dis('.')" id="poin" value=".">
+            </div>
+            <div class="button">
+                <input type="button" onclick="solve()" id="resul" value="=" style="color: #1975c5">
+            </div>
+        </div>
+    </div>
+
+	
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>
